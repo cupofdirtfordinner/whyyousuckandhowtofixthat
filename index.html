@@ -8,6 +8,7 @@ body {
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
+   margin: 0;
 }
 
 h1 {
@@ -28,16 +29,51 @@ p {
 @keyframes fadeIn {
   0% {opacity:0;}
   100% {opacity:1;}
+  
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: white;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
 </style>
 </head>
 <body>
 
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
 
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
 <h1>Why you suck</h1>
 <p>Carbon footprint is something not many people know about (or at least dont care enough about), despite it being an extreme factor to society and our future. Your carbon footprint impacts the world more than you think because each time you go anywhere in your car it contributes to global warming. Global warming is when gasses like methane and carbon monoxide gets stuck in our atmosphere and traps heat.
 </p>
 <br>
 <h1>...and here is how to fix that.</h1>
-
+</div>
 </body>
 </html>
