@@ -15,7 +15,7 @@ h1 {
   color: white;
   text-align: center;
   font-family: Courier New;
-  animation: fadeIn linear 2.5s;
+  animation: fadeIn linear 2s;
 }
 
 p {
@@ -23,8 +23,7 @@ p {
   font-size: 20px;
   color: white;
   text-align: center;
-  animation: fadeIn linear 2.5s;
-  animation-delay: 1s;
+  animation: fadeIn ease-in 4s;
 }
 
 ul {
@@ -58,6 +57,11 @@ li a:hover:not(.active) {
 
 @keyframes fadeIn {
   0% {opacity:0;}
+  100% {opacity:1;}
+  
+@keyframes fadeIn2 {
+  0% {opacity:0;}
+  20% {opacity:0;}
   100% {opacity:1;}
   
 </style>
