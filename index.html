@@ -9,17 +9,19 @@ body {
    background-position: center;
    background-size: cover;
    margin: 0;
+   animation: scale-up-center ease-in 4s;
 }
 
 h1 {
   color: white;
   text-align: center;
-  font-family: Courier New;
+  font-family: Optima, sans-serif;
+  font-weight: light;
   animation: fadeIn linear 2s;
 }
 
 p {
-  font-family: verdana;
+  font-family: Optima, sans-serif;
   font-size: 20px;
   color: white;
   text-align: center;
@@ -28,6 +30,8 @@ p {
 
 ul {
   list-style-type: none;
+  font-family: Optima, sans-serif;
+  font-weight: bold;
   margin: 0;
   padding: 0;
   width: 25%;
@@ -63,6 +67,28 @@ li a:hover:not(.active) {
   0% {opacity:0;}
   20% {opacity:0;}
   100% {opacity:1;}
+  
+  @-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
   
 </style>
 
