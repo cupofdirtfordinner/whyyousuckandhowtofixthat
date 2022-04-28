@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: black;
+  background-image: url("images/background.png");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   margin: 0;
+   animation: scale-up-center ease-in 4s;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-family: Optima, sans-serif;
+  font-weight: light;
+  animation: fadeIn linear 2s;
+}
+
+p {
+  font-family: Optima, sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  animation: fadeIn ease-in 4s;
+}
+
+ul {
+  list-style-type: none;
+  font-family: Optima, sans-serif;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  opacity: 40%;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background: rgba(0,0,0,1);
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: transparent;
+  color: white;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  
+@keyframes fadeIn2 {
+  0% {opacity:0;}
+  20% {opacity:0;}
+  100% {opacity:1;}
+  
+  @-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+  
+</style>
+  <title>nonprofits</title>
+  </head>
+  <body>
+    <ul>
+  <li><a href="index">landing</a></li>
+  <li><a class="active" href="about">non-profit's</a></li>
+  <li><a href="credits">Credits...</a></li>
+  <li><a href="sources">Sources...</a></li>
+</ul>
+    <a href="https://earthjustice.org/">earthjustice</a>
+    <a href="https://www.climaterealityproject.org/>climate reality project</a>
+             <a href="https://restoretheearth.org/>restore the earth</a>
+    <a href="https://www.c40.org/">c40 cities</a>
